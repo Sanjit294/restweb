@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <title>Foodie Restaurant</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Merienda', cursive;
+            background: url('rest.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.5); 
+            border-bottom: 2px solid goldenrod;
+        }
+
+        header h1 {
+            font-size: 80px;
+            letter-spacing: 10px;
+            margin: 0;
+            text-shadow: 2px 2px 8px black;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            animation: slideDown 1.5s ease-out;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: black;
+            background: linear-gradient(to right, goldenrod, gold);
+            transform: scale(1.1);
+        }
+
+        main {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1); 
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        main p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #f9f9f9;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid goldenrod;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        footer a {
+            color: goldenrod;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer a:hover {
+            color: #d4af37;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 50px;
+                letter-spacing: 5px;
+            }
+
+            nav a {
+                font-size: 16px;
+                padding: 8px 12px;
+            }
+
+            main p {
+                font-size: 20px;
+            }
+
+            footer p, footer a {
+                font-size: 16px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Foodie Restaurant</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="menu.html" title="Menu">Menu</a></li>
+            <li><a href="administration.html" title="Administration">Administration</a></li>
+            <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Welcome to Foodie Restaurant! Indulge in a delightful dining experience, where taste meets perfection. Explore our menu and immerse yourself in a world of exquisite flavors.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Foodie Restaurant | Designed by: <b>Sanjit A</b></p>
+        <p>
+            <a href="#" title="Facebook">Facebook</a> |
+            <a href="#" title="Twitter">Twitter</a> |
+            <a href="#" title="Instagram">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
